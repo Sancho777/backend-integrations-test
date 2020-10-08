@@ -24,38 +24,16 @@ Install packages
 $ pip install -r requirements.txt
 ```
 
-### Richart's Wholesale Club
-
-Make directory called `dataset` y save following files:
-
-- [PRODUCTS.csv](https://cornershop-scrapers-evaluation.s3.amazonaws.com/public/PRODUCTS.csv): Contains the products basic information
-
-- [BRANCHES.csv](https://cornershop-scrapers-evaluation.s3.amazonaws.com/public/BRANCHES.csv): Contains information about the branches
-
-- [PRICES.csv](https://cornershop-scrapers-evaluation.s3.amazonaws.com/public/PRICES.csv): Contains information about the prices
-
-- [STOCK.csv](https://cornershop-scrapers-evaluation.s3.amazonaws.com/public/STOCK.csv): Contains information about the stock
-
-To process the csv files and save it in sqlite database run:
-
-For all products
-
-```sh
-$ python main.py
-```
-
-For 500 products
-
-```sh
-$ python main.py -p 500
-```
-
 ### Scraping Walmart
 
 Website [Walmart](https://www.walmart.ca/)
 Category: Groceries
 Branches: `3124` and `3106`
 
+Go to the backend-integration-test in the command prompt
+
+Scrapy:
+
 ```sh
-$ scrapy crawl walmart_crawler
+$ scrapy crawl ca_walmart
 ```
